@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<div class="container col-md-4 col-md-offset-4">
+    <div class="well" style="padding: 20px; margin-top: 25%;">
+        <h4 class="text-center">Login to Chat</h4>
+        <form action="" method="POST" role="form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" placeholder="Your name" name="name" />
+            </div>
+            <div class="form-group text-center">
+                <input name="submit" type="submit" value="Join" class="btn btn-success" />
+            </div><br/> {{error}}
+        </form>
+    </div>
+</div>
+{% endblock %}

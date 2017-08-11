@@ -1,0 +1,5 @@
+{% extends "bootstrap/base.html" %} {% block content %} {% block styles -%} {{super()}} {# do not forget to call super or
+Bootstrap's own stylesheets will disappear! #}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='custom.css')}}">
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='socket.io.js') }}"></script>{% endblock %} {% endblock %}
